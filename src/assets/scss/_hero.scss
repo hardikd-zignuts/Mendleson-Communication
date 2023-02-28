@@ -1,0 +1,42 @@
+.hero {
+  @include flex;
+  justify-content: end;
+  height: 805px;
+  position: relative;
+  text-align: justify;
+  //   padding: 0px 130px;
+  &-part1 {
+    max-width: 43%;
+    position: absolute;
+    bottom: 0;
+    left: 143px;
+  }
+  &-part2 {
+    // position: relative;
+    // left: 22rem;
+    &__title {
+      max-width: 459px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 56px;
+      line-height: 66px;
+      margin-bottom: 25px;
+    }
+    &__text {
+      max-width: 544px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  &-part3 {
+    // position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    max-width: 80%;
+  }
+}

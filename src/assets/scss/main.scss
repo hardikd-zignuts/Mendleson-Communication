@@ -1,0 +1,21 @@
+@import "./variables";
+@import "./common";
+@import "./navbar";
+@import "./vector";
+@import "./hero";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: $bg-color;
+}
+
+.container {
+  @media (min-width: map-get($breakpoints, xxl)) {
+    max-width: 1350px !important;
+  }
+}

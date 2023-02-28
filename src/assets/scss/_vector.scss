@@ -1,0 +1,40 @@
+.assets1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  @media (max-width: map-get($breakpoints, lg)) {
+    height: 6rem;
+  }
+  @media (max-width: map-get($breakpoints,md)) {
+    height: 5rem;
+  }
+  @media (max-width: map-get($breakpoints,sm)) {
+    height: 4rem;
+  }
+}
+
+.assets2 {
+  position: absolute;
+  right: 0px;
+
+  @media (max-width: map-get($breakpoints, lg)) {
+    height: 16rem;
+  }
+  @media (max-width: map-get($breakpoints,sm)) {
+    height: 12rem;
+  }
+}
+.assets3 {
+  position: absolute;
+  left: 0;
+  top: 338px;
+
+  @media (max-width: map-get($breakpoints, lg)) {
+    height: 36rem;
+  }
+}
+.assets4 {
+  position: absolute;
+  top: 653px;
+  right: 0;
+}

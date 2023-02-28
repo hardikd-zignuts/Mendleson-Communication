@@ -1,0 +1,13 @@
+nav {
+  padding: 15px 0px !important;
+
+  .logo {
+    height: 85px;
+    @media (max-width: 991px) {
+      height: 74px;
+    }
+  }
+  .nav-links {
+    padding: 0px 35px !important;
+  }
+}
