@@ -1,0 +1,46 @@
+.about {
+  @include flex;
+  &-image {
+    img {
+      max-width: 408px;
+    }
+  }
+
+  &-info {
+    &-header {
+      &_title {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 57px;
+      }
+      &_text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: $text-secondary;
+      }
+    }
+    &-bottom {
+      @include flex;
+margin: 40px;
+      .about-category {
+        &-icon {
+          height: 40px;
+          width: 40px;
+        }
+        &-title {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 28px;
+          text-transform: uppercase;
+        }
+        &-text {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 27px;
+          color: $text-secondary;
+        }
+      }
+    }
+  }
+}
