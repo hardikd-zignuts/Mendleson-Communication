@@ -3,8 +3,11 @@ nav {
 
   .logo {
     height: 85px;
-    @media (max-width: 991px) {
+    @media (max-width: map-get($breakpoints, lg)) {
       height: 74px;
+    }
+    @media (max-width: map-get($breakpoints,md)) {
+      height: 60px;
     }
   }
   .nav-links {

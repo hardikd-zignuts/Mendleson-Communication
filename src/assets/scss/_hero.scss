@@ -1,42 +1,124 @@
 .hero {
   @include flex;
-  justify-content: end;
-  height: 805px;
+  height: 750px;
+  justify-content: space-between;
   position: relative;
-  text-align: justify;
-  //   padding: 0px 130px;
+  margin-top: 21px;
+  @media (max-width: map-get($breakpoints,lg)) {
+    height: 666px;
+  }
+  @media (max-width: map-get($breakpoints,sm)) {
+    height: 575px;
+  }
+  @media (max-width: 445px) {
+    height: 517px;
+  }
   &-part1 {
-    max-width: 43%;
+    width: 573px;
     position: absolute;
     bottom: 0;
-    left: 143px;
+    left: 0;
+    @media (max-width: map-get($breakpoints,lg)) {
+      width: 397px;
+    }
+    @media (max-width: map-get($breakpoints,md)) {
+      width: 327px;
+    }
+    @media (max-width: map-get($breakpoints,sm)) {
+      width: 257px;
+    }
   }
   &-part2 {
-    // position: relative;
-    // left: 22rem;
+    // position: absolute;
+    // right: 10%;
+    width: 46%;
+    margin-left: auto;
+    z-index: 10;
+    @media (max-width: map-get($breakpoints,lg)) {
+      width: 68%;
+      margin-bottom: 10rem;
+    }
+
+    @media (max-width: map-get($breakpoints,md)) {
+      width: 78%;
+    }
+    @media (max-width: map-get($breakpoints,sm)) {
+      width: 93%;
+      margin-bottom: 14rem;
+    }
     &__title {
-      max-width: 459px;
+      max-width: 460px;
       font-style: normal;
       font-weight: 500;
       font-size: 56px;
       line-height: 66px;
       margin-bottom: 25px;
+
+      @media (max-width: map-get($breakpoints,lg)) {
+        max-width: 400px;
+        font-size: 43px;
+        line-height: 57px;
+        margin-bottom: 23px;
+      }
+      @media (max-width: map-get($breakpoints,md)) {
+        max-width: 400px;
+        font-size: 43px;
+        line-height: 57px;
+        margin-bottom: 23px;
+      }
+
+      @media (max-width: 445px) {
+        max-width: 340px;
+        font-size: 28px;
+        line-height: 41px;
+      }
     }
     &__text {
-      max-width: 544px;
+      max-width: 460px;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 21px;
+
+      @media (max-width: map-get($breakpoints,lg)) {
+        max-width: 400px;
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      @media (max-width: 445px) {
+        max-width: 340px;
+        font-size: 11px;
+        line-height: 17px;
+      }
     }
   }
 
   &-part3 {
     // position: relative;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    max-width: 80%;
+    :first-child {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      max-width: 30%;
+      @media (max-width: map-get($breakpoints,lg)) {
+        max-width: 22%;
+      }
+      @media (max-width: map-get($breakpoints,md)) {
+        max-width: 21%;
+      }
+    }
+    :nth-child(2) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      @media (max-width: map-get($breakpoints,lg)) {
+        max-width: 20%;
+      }
+      @media (max-width: map-get($breakpoints,md)) {
+        max-width: 12%;
+      }
+    }
   }
 }

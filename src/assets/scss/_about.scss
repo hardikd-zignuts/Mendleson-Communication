@@ -1,38 +1,48 @@
 .about {
   @include flex;
+  margin-top: 77.81px;
+  justify-content: space-between;
   &-image {
     img {
-      max-width: 408px;
+      max-width: 100%;
     }
   }
 
   &-info {
+    max-width: 46%;
     &-header {
+      margin-bottom: 15px;
       &_title {
         font-weight: 500;
         font-size: 48px;
         line-height: 57px;
+        margin-bottom: 2px;
       }
       &_text {
         font-weight: 400;
         font-size: 18px;
         line-height: 27px;
         color: $text-secondary;
+        margin-top: 21px;
       }
+
     }
     &-bottom {
       @include flex;
-margin: 40px;
+      // margin: 40px;
       .about-category {
+        // max-width: 300px;
         &-icon {
           height: 40px;
           width: 40px;
+          margin: 25px 0px;
         }
         &-title {
           font-weight: 500;
           font-size: 24px;
           line-height: 28px;
           text-transform: uppercase;
+          margin-bottom: 15px;
         }
         &-text {
           font-weight: 400;

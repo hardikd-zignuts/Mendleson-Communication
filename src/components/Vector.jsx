@@ -1,8 +1,8 @@
 import React from "react";
 import Assets1 from "../assets/img/Asset 1.png";
 import Assets2 from "../assets/img/Asset 2.png";
-import Assets3 from "../assets/img/Assets 3.png";
-import Assets4 from "../assets/img/Assets 4.png";
+// import Assets3 from "../assets/img/Assets 3.png";
+// import Assets4 from "../assets/img/Assets 4.png";
 
 const Vector = () => {
   return (
