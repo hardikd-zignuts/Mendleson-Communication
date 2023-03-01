@@ -1,0 +1,16 @@
+.footer {
+  margin-top: 75px;
+  &-head {
+    background-color: $footer-bg;
+    padding: 84px 42px;
+  }
+
+  &-bottom {
+    margin: 22px 0px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-secondary;
+  }
+}
