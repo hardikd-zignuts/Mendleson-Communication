@@ -1,0 +1,32 @@
+.team {
+  margin-top: 104px;
+
+  &-bottom {
+    @include flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+    .team-member {
+      text-align: center;
+
+      &-img {
+        margin-top: 31px;
+        img {
+          max-width: 100%;
+        }
+      }
+
+      &-name {
+        margin-top: 22px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: $dark;
+      }
+    }
+  }
+}

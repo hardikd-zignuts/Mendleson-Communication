@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Vector from './components/Vector';
 import Hero from './components/Hero'
 import Services from './components/page/Services';
+import Team from './components/Team';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <div className='container mb-5'>
           <About />
           <Services />
+          <Team/>
         </div>
       </div>
     </>
