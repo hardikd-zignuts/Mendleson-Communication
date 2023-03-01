@@ -1,6 +1,7 @@
 import React from "react";
 import BorderBottom from "../BorderBottom";
 import ServicesBox from "../ServicesBox";
+import ServiceData from "../../assets/data/ServiceData";
 
 const Services = () => {
   return (
@@ -10,7 +11,9 @@ const Services = () => {
       </div>
 
       <div className="box">
-        <ServicesBox />
+        {ServiceData.map((item) => {
+          return <ServicesBox key={item.id} {...item} />;
+        })}
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 
 const BorderBottom = ({ pw, cw, name, center }) => {
-  const textCenter = center && "text-center";
+  const textCenter = center ? "text-center" : null;
   const borderDown = {
     display: "inline-flex",
     "align-items": "center",
