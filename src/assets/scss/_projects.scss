@@ -1,8 +1,11 @@
 .project {
+  margin-bottom: 88px;
   &-header {
     margin: 34px 0px;
   }
   .project-image {
-    max-width: 100%;
+    @media (max-width: map-get($breakpoints, lg)) {
+      max-width: 100%;
+    }
   }
 }

@@ -6,6 +6,8 @@ import Hero from './components/Hero'
 import Services from './components/page/Services';
 import Team from './components/Team';
 import Projects from './components/Projects';
+import Client from './components/common/Client';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Services />
           <Team />
           <Projects />
+          <Client />
+          <Footer />
         </div>
       </div>
     </>
