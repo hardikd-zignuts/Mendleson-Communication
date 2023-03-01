@@ -9,8 +9,12 @@ nav {
     @media (max-width: map-get($breakpoints,md)) {
       height: 60px;
     }
+    @media (max-width: 310px) {
+      height: 50px;
+    }
   }
   .nav-links {
     padding: 0px 35px !important;
   }
 }
+  

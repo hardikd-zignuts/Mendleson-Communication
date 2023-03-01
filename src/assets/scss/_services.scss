@@ -1,0 +1,28 @@
+.services {
+  margin-top: 105px;
+  &-header {
+    margin-bottom: 44px;
+  }
+
+  &-box {
+    &-info {
+      max-width: 529px;
+      text-align: end;
+      margin-top: 49px;
+      &--title {
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 50px;
+        text-transform: uppercase;
+        color: $text-secondary;
+      }
+    }
+    &--text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: right;
+      color: $text-secondary;
+    }
+  }
+}

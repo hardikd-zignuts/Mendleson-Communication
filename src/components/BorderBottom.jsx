@@ -1,6 +1,7 @@
 import React from "react";
 
-const BorderBottom = ({ pw, cw }) => {
+const BorderBottom = ({ pw, cw, name, center }) => {
+  const textCenter = center && "text-center";
   const borderDown = {
     display: "inline-flex",
     "align-items": "center",
@@ -21,9 +22,12 @@ const BorderBottom = ({ pw, cw }) => {
   };
   return (
     <>
-      <div style={borderDown} className="border-down">
-        <span style={borderThick} className="border-down-thick"></span>
-        <span style={borderThin} className="border-down-thin"></span>
+      <div className={`${textCenter}`}>
+        <div className="about-info-header_title">{name}</div>
+        <div style={borderDown} className="border-down">
+          <span style={borderThick} className="border-down-thick"></span>
+          <span style={borderThin} className="border-down-thin"></span>
+        </div>
       </div>
     </>
   );

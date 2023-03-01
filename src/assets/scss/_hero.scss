@@ -34,6 +34,7 @@
     width: 46%;
     margin-left: auto;
     z-index: 10;
+    margin-bottom: 13rem;
     @media (max-width: map-get($breakpoints,lg)) {
       width: 68%;
       margin-bottom: 10rem;

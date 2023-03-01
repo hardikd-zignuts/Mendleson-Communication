@@ -1,8 +1,15 @@
 .about {
   @include flex;
   margin-top: 77.81px;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+
   &-image {
+    margin-right: 40px;
+    @media (max-width: map-get($breakpoints, xxl)) {
+      margin: 0;
+      margin-bottom: 40px;
+    }
     img {
       max-width: 100%;
     }
@@ -10,8 +17,14 @@
 
   &-info {
     max-width: 46%;
+    margin-left: 40px;
+    @media (max-width: map-get($breakpoints, xxl)) {
+      max-width: 100%;
+      margin-left: 0px;
+    }
+
     &-header {
-      margin-bottom: 15px;
+      margin-bottom: 0px 35px;
       &_title {
         font-weight: 500;
         font-size: 48px;
@@ -25,13 +38,17 @@
         color: $text-secondary;
         margin-top: 21px;
       }
-
     }
     &-bottom {
       @include flex;
-      // margin: 40px;
+      @media (max-width: map-get($breakpoints, xxl)) {
+        justify-content: space-around;
+      }
+      @media (max-width: map-get($breakpoints, md)) {
+        flex-wrap: wrap;
+      }
       .about-category {
-        // max-width: 300px;
+        max-width: 300px;
         &-icon {
           height: 40px;
           width: 40px;
