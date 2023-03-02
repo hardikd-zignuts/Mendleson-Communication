@@ -14,7 +14,6 @@ const About = () => {
       <div className="about-info">
         {/* Header Part  */}
         <div className="about-info-header">
-          {/* <div className="about-info-header_title">ABOUT US</div> */}
           <BorderBottom pw="238px" cw="156px" name="ABOUT US" />
           <div className="about-info-header_text">
             We love what we do and are driven by achieving great results for our

@@ -8,7 +8,13 @@
       max-width: 100%;
     }
   }
-
+  @media (max-width: 426px) {
+    .project-header:first-child {
+      :nth-child(2) {
+        width: 259px !important;
+      }
+    }
+  }
   .project-body {
     position: relative;
 

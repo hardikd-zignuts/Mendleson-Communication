@@ -6,7 +6,7 @@
     @include flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    @media (max-width:map-get($breakpoints, lg)) {
+    @media (max-width: map-get($breakpoints, lg)) {
       flex-direction: column;
       justify-content: center;
       text-align: center;
@@ -17,6 +17,10 @@
         width: 100%;
         margin: 10px 0px;
       }
+    }
+
+    @media (max-width: 426px) {
+      padding: 24px 0px;
     }
   }
   .footer-primary-text {

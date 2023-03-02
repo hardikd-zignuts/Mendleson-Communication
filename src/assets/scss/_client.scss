@@ -3,6 +3,14 @@
 
   &-header {
     margin-bottom: 40px;
+
+    @media (max-width: 426px) {
+    :first-child {
+      :nth-child(2) {
+        width: 236px !important;
+      }
+    }
+    }
   }
   &-gallery {
     @include flex;
@@ -19,19 +27,19 @@
       }
     }
 
-    &-first{
-        @include flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 20px;
-        width: 100%
+    &-first {
+      @include flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 100%;
     }
-    &-second{
-        @include flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 20px;
-        width: 100%
+    &-second {
+      @include flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 100%;
     }
   }
 }

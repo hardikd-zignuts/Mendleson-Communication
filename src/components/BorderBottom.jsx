@@ -1,10 +1,10 @@
 import React from "react";
 
 const BorderBottom = ({ pw, cw, name, center }) => {
-  const textCenter = center ? "text-center" : 'text-start';
+  const textCenter = center ? "text-center" : "text-start";
   const borderDown = {
     display: "inline-flex",
-    "align-items": "center",
+    alignItems: "center",
     width: pw,
   };
   const borderThick = {
@@ -12,7 +12,7 @@ const BorderBottom = ({ pw, cw, name, center }) => {
     width: cw,
     height: "7px",
     background: "#a9a9a9",
-    "border-radius": "4px",
+    borderRadius: "4px",
   };
   const borderThin = {
     display: "inline-block",

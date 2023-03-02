@@ -1,5 +1,9 @@
-.box-main{
-    margin-bottom: 78px;
+.box-main {
+  margin-bottom: 78px;
+
+  @media (max-width: 426px) {
+    margin-bottom: 16px;
+  }
 }
 .services {
   margin-top: 105px;
@@ -23,18 +27,40 @@
         line-height: 50px;
         text-transform: uppercase;
         color: $text-secondary;
+
+        @media (max-width: 426px) {
+          font-size: 33px;
+          line-height: 46px;
+        }
+
+        @media (max-width: 338px) {
+          font-size: 25px;
+          line-height: 37px;
+        }
       }
-    }
-    &--text {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      text-align: right;
-      color: $text-secondary;
+
+      &--text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        color: $text-secondary;
+
+        @media (max-width: map-get($breakpoints, xl)) {
+          text-align: center;
+        }
+        @media (max-width: 426px) {
+          font-size: 12px;
+          line-height: 20px;
+        }
+        @media (max-width: 338px) {
+          font-size: 9px;
+          line-height: 15px;
+        }
+      }
     }
   }
 }
-
 .service-box-image {
   text-align: center;
 
