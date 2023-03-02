@@ -12,16 +12,12 @@
   .project-body {
     position: relative;
 
-    background-color: #1e82b1;
-    .project-image {
-      width: 100%;
-    }
     .project-text {
-      visibility: hidden;
+      display: none;
       position: absolute;
-      bottom: 3rem;
+      bottom: 2rem;
       color: white;
-      left: 11rem;
+      left: 5rem;
       font-size: 3rem;
       text-align: start;
     }
@@ -31,5 +27,23 @@
       cursor: pointer;
       opacity: 0.5;
     }
+
+    background-color: #1e82b1;
+    .project-image {
+      width: 100%;
+    }
   }
+}
+
+.project1:hover #p1 {
+  transition: 1200ms;
+  display: block;
+}
+.project2:hover #p2 {
+  transition: 1200ms;
+  display: block;
+}
+.project3:hover #p3 {
+  transition: 1200ms;
+  display: block;
 }
