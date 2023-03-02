@@ -8,4 +8,28 @@
       max-width: 100%;
     }
   }
+
+  .project-body {
+    position: relative;
+
+    background-color: #1e82b1;
+    .project-image {
+      width: 100%;
+    }
+    .project-text {
+      visibility: hidden;
+      position: absolute;
+      bottom: 3rem;
+      color: white;
+      left: 11rem;
+      font-size: 3rem;
+      text-align: start;
+    }
+
+    :hover {
+      transition: 600ms;
+      cursor: pointer;
+      opacity: 0.5;
+    }
+  }
 }
