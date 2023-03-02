@@ -7,7 +7,7 @@ const NavBar = () => {
     <>
       <Navbar expand="md" className="p-0">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img className="logo" src={logo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle id="toggle" aria-controls="basic-navbar-nav" />
@@ -22,7 +22,7 @@ const NavBar = () => {
               <Nav.Link className="text-dark" href="#team">
                 Team
               </Nav.Link>
-              <Nav.Link className="text-dark" href="#clients">
+              <Nav.Link className="text-dark" href="#client">
                 Clients
               </Nav.Link>
               <Nav.Link className="text-dark" href="#contact">

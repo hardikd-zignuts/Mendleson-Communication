@@ -3,8 +3,32 @@
   &-head {
     background-color: $footer-bg;
     padding: 84px 42px;
+    @include flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width:map-get($breakpoints, lg)) {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      &-social,
+      &-explore,
+      &-contact,
+      &-email {
+        width: 100%;
+        margin: 10px 0px;
+      }
+    }
   }
-
+  .footer-primary-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 221%;
+  }
+  .footer-sub-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 31px;
+  }
   &-bottom {
     margin: 22px 0px;
     text-align: center;

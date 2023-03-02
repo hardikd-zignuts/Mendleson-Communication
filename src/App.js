@@ -16,7 +16,7 @@ function App() {
         <Vector />
         <NavBar />
         <Hero />
-        <div className='container mb-5'>
+        <div className='container'>
           <About />
           <Services />
           <Team />
